@@ -7,15 +7,45 @@
 </head>
 <body>
     <p>Q1</p>
-    <img src="images/Q3_1.png" alt="문제 이미지">
-    <img src="images/Q3_2.png">
     <p></p>
-    <input type="text" id="answer" placeholder="정답을 입력하세요">
+    <p>이 마방진을 완성시키지 않으면 더 이상 진행할 수 없는 것 같다.
+        마방진이란 가로, 세로, 대각선의 각각의 열의 합이 모두 동일하게 되는 신기한 배열을 말한다.
+        이미 1과 2는 배치되어 있으므로 남은 숫자를 사용하며 마방진을 완성하여라.</p>
+    <p></p>
+    <img src="images/Q3.jpeg" alt="문제 이미지">
+    <p></p>
+    <div>
+        <p>1.</p>
+        <input type="text" id="answer1" placeholder="정답을 입력하세요">
+        <p>2.</p>
+        <input type="text" id="answer2" placeholder="정답을 입력하세요">
+        <p>3.</p>
+        <input type="text" id="answer3" placeholder="정답을 입력하세요">
+    </div>
+    <div>
+        <p>4.</p>
+        <input type="text" id="answer4" placeholder="정답을 입력하세요">
+        <p>5.</p>
+        <input type="text" id="answer5" placeholder="정답을 입력하세요">
+        <p>6.</p>
+        <input type="text" id="answer6" placeholder="정답을 입력하세요">
+        <p>7.</p>
+        <input type="text" id="answer7" placeholder="정답을 입력하세요">
+    </div>
+
     <button onclick="checkAnswer()">제출</button>
     <script>
         function checkAnswer() {
-            var answer = document.getElementById('answer').value.trim();
-            if (answer === '6') { // 정답을 '6'로 설정
+            var answer1 = document.getElementById('answer1').value.trim();
+            var answer2 = document.getElementById('answer2').value.trim();
+            var answer3 = document.getElementById('answer3').value.trim();
+            var answer4 = document.getElementById('answer4').value.trim();
+            var answer5 = document.getElementById('answer5').value.trim();
+            var answer6 = document.getElementById('answer6').value.trim();
+            var answer7 = document.getElementById('answer7').value.trim();
+            if (answer1 === '9' && answer2 === '4' && answer3 === '7' && answer4 === '5'
+                && answer5 === '3' && answer6 === '6' && answer7 === '8'
+            ) { // 정답을 '6'로 설정
                 window.location.href = 'Q!c3tU.html';
             } else {
                 alert('틀렸습니다. 다시 시도해보세요.');
